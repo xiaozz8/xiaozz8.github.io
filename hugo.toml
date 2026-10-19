@@ -1,4 +1,4 @@
-baseURL = "https://xiaozz8.github.io/"
+baseURL = "https://blog.spicel.cn/"
 languageCode = "zh-cn"
 title = "我的个人博客"
 theme = ["github.com/adityatelange/hugo-PaperMod"]
