@@ -1,0 +1,37 @@
+baseURL = "https://xiaozz8.github.io/"
+languageCode = "zh-cn"
+title = "我的个人博客"
+theme = ["github.com/adityatelange/hugo-PaperMod"]
+paginate = 10
+enableRobotsTXT = true
+buildDrafts = false
+
+[params]
+  env = "production"
+  description = "这是我的个人博客，记录技术与生活"
+  author = "你的名字"
+  defaultTheme = "auto"  # auto / light / dark
+  ShowReadingTime = true
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+
+  [params.homeInfoParams]
+    Title = "👋 欢迎来到我的博客"
+    Content = "这里记录我的技术笔记、学习心得与生活感悟"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/xiaozz8"
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "xxxiaozy@163.com"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]  # JSON 用于搜索功能
+
+[markup.highlight]
+  style = "dracula"       # 代码高亮主题
+  lineNos = false
+  guessSyntax = true
