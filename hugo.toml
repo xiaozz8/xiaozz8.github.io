@@ -9,7 +9,7 @@ buildDrafts = false
 [params]
   env = "production"
   description = "这是我的个人博客，记录技术与生活"
-  author = "你的名字"
+  author = "xiaozz8"
   defaultTheme = "auto"  # auto / light / dark
   ShowReadingTime = true
   ShowBreadCrumbs = true
