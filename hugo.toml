@@ -66,12 +66,6 @@ buildDrafts = false
 [outputs]
   home = ["HTML", "RSS", "JSON"]  # JSON 用于搜索功能
 
-[markup.highlight]
-  style = "dracula"       # 代码高亮主题
-  lineNos = false
-  guessSyntax = true
-
-
 [params.profileMode]
   enabled = true            # ← 改为 true 即开启简历首页
   title = "你的名字 | Senior Backend Engineer"
