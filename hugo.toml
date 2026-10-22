@@ -75,11 +75,10 @@ buildDrafts = false
   home = ["HTML", "RSS", "JSON"]  # JSON 用于搜索功能
 
 [params.profileMode]
-  enabled = true            # ← 改为 true 即开启简历首页
-  title = "你的名字 | Senior Backend Engineer"
-  subtitle = "5年分布式系统经验 · Go / K8s / 云原生"
+  enabled = true
+  title = "Xiaozy | Java Backend Engineer"
   imageUrl = "/images/avatar.jpg"
-  imageTitle = "Profile Photo"
+  imageTitle = "假装这里有头像"
   imageWidth = 120
   imageHeight = 120
   
