@@ -15,11 +15,11 @@ buildDrafts = false
   writeStats = true
 
 [markup.goldmark.renderer]
-  unsafe = true              # 允许内联 HTML（简历/自定义组件必需）
+  unsafe = true
 
 [markup.highlight]
-  noClasses = false          # 使用 CSS 类高亮，适配暗色模式切换
-  style = "monokai"          # 代码高亮主题，可改为 "dracula" / "github-dark"
+  noClasses = false
+  style = "monokai"
   lineNos = true
   lineNumbersInTable = true
   guessSyntax = true
@@ -42,6 +42,8 @@ buildDrafts = false
     enable = true
 
   [params.fuseOpts]
+    showTags = true           # 在文章页显示标签
+    showTagCount = true       # 在标签列表页显示文章数量
     isCaseSensitive = false
     shouldSort = true
     location = 0
@@ -69,10 +71,10 @@ buildDrafts = false
 
   [[params.socialIcons]]
     name = "email"
-    url = "xxxiaozy@163.com"
+    url = "mailto:xxxiaozy@163.com"
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]  # JSON 用于搜索功能
+  home = ["HTML", "RSS", "JSON"]
 
 [params.profileMode]
   enabled = false
