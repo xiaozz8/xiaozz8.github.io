@@ -53,7 +53,7 @@ buildDrafts = false
   # 资源优化
   [params.assets]
     disableHLJS = false
-    disableFingerprinting: false
+    disableFingerprinting = false
     favicon = "/favicon.ico"
     favicon16x16 = "/favicon-16x16.png"
     favicon32x32 = "/favicon-32x32.png"
