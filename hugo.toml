@@ -57,7 +57,7 @@ buildDrafts = false
     favicon = "/favicon.ico"
     favicon16x16 = "/favicon-16x16.png"
     favicon32x32 = "/favicon-32x32.png"
-    apple_touch_icon = "/apple-touch-icon.png"
+    apple_touch_icon = "/favicon-128x128.png"
 
   [params.homeInfoParams]
     Title = "👋 欢迎来到我的博客"
