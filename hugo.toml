@@ -4,7 +4,22 @@ title = "我的个人博客"
 theme = ["github.com/adityatelange/hugo-PaperMod"]
 paginate = 10
 enableRobotsTXT = true
+enableGitInfo = true
+enableEmoji = true
 buildDrafts = false
+
+[minify]
+  minifyOutput = true
+
+[build]
+  writeStats = true
+
+[markup.goldmark.renderer]
+  unsafe = true              # 允许内联 HTML（简历/自定义组件必需）
+
+[markup.highlight]
+  noClasses = false          # 使用 CSS 类高亮，适配暗色模式切换
+  style = "monokai"          # 代码高亮主题，可改为 "dracula" / "github-dark"
 
 [params]
   env = "production"
@@ -12,9 +27,29 @@ buildDrafts = false
   author = "xiaozz8"
   defaultTheme = "auto"  # auto / light / dark
   ShowReadingTime = true
+  ShowShareButtons = true
   ShowBreadCrumbs = true
   ShowPostNavLinks = true
   ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 2
+    keys = ["title", "permalink", "summary", "content"]
+
+  # 资源优化
+  [params.assets]
+    disableHLJS = false      # 若博客无代码块可设为 true 节省 40KB+ JS
+    favicon = "/favicon.ico"
+    favicon16x16 = "/favicon-16x16.png"
+    favicon32x32 = "/favicon-32x32.png"
+    apple_touch_icon = "/apple-touch-icon.png"
 
   [params.homeInfoParams]
     Title = "👋 欢迎来到我的博客"
@@ -35,3 +70,60 @@ buildDrafts = false
   style = "dracula"       # 代码高亮主题
   lineNos = false
   guessSyntax = true
+
+
+[params.profileMode]
+  enabled = true            # ← 改为 true 即开启简历首页
+  title = "你的名字 | Senior Backend Engineer"
+  subtitle = "5年分布式系统经验 · Go / K8s / 云原生"
+  imageUrl = "/images/avatar.jpg"
+  imageTitle = "Profile Photo"
+  imageWidth = 120
+  imageHeight = 120
+  
+  [[params.profileMode.buttons]]
+    name = "📥 下载简历"
+    url = "/resume.pdf"
+  [[params.profileMode.buttons]]
+    name = "GitHub"
+    url = "https://github.com/xiaozz8"
+  [[params.profileMode.buttons]]
+    name = "博客文章"
+    url = "/posts/"
+
+# ==================== 导航菜单 ====================
+[[menu.main]]
+  identifier = "archives"
+  name = "📚 归档"
+  url = "/archives/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "tags"
+  name = "🏷️ 标签"
+  url = "/tags/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "search"
+  name = "🔍 搜索"
+  url = "/search/"
+  weight = 30
+
+[[menu.main]]
+  identifier = "resume"
+  name = "📄 简历"
+  url = "/resume/"
+  weight = 99               # 放在导航栏最右侧
+
+# ==================== 隐私保护 ====================
+[privacy.googleAnalytics]
+  anonymizeIP = true
+
+[privacy.youtube]
+  privacyEnhanced = true
+
+# ==================== 多语言（可选）====================
+[languages.zh-cn]
+  languageName = "中文"
+  weight = 1
