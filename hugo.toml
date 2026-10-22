@@ -75,7 +75,7 @@ buildDrafts = false
   home = ["HTML", "RSS", "JSON"]  # JSON 用于搜索功能
 
 [params.profileMode]
-  enabled = true
+  enabled = false
   title = "Xiaozy | Java Backend Engineer"
   imageUrl = "/images/avatar.jpg"
   imageTitle = "假装这里有头像"
@@ -115,16 +115,14 @@ buildDrafts = false
   identifier = "resume"
   name = "📄 简历"
   url = "/resume/"
-  weight = 99               # 放在导航栏最右侧
+  weight = 99
 
-# ==================== 隐私保护 ====================
 [privacy.googleAnalytics]
   anonymizeIP = true
 
 [privacy.youtube]
   privacyEnhanced = true
 
-# ==================== 多语言（可选）====================
 [languages.zh-cn]
   languageName = "中文"
   weight = 1
