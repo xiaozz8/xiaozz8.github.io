@@ -20,6 +20,10 @@ buildDrafts = false
 [markup.highlight]
   noClasses = false          # 使用 CSS 类高亮，适配暗色模式切换
   style = "monokai"          # 代码高亮主题，可改为 "dracula" / "github-dark"
+  lineNos = true
+  lineNumbersInTable = true
+  guessSyntax = true
+  tabWidth = 4
 
 [params]
   env = "production"
@@ -34,6 +38,9 @@ buildDrafts = false
   ShowToc = true
   TocOpen = false
 
+  [params.mermaid]
+    enable = true
+
   [params.fuseOpts]
     isCaseSensitive = false
     shouldSort = true
@@ -45,7 +52,8 @@ buildDrafts = false
 
   # 资源优化
   [params.assets]
-    disableHLJS = false      # 若博客无代码块可设为 true 节省 40KB+ JS
+    disableHLJS = false
+    disableFingerprinting: false
     favicon = "/favicon.ico"
     favicon16x16 = "/favicon-16x16.png"
     favicon32x32 = "/favicon-32x32.png"
